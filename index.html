@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Profile card component</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background-image: url(images/bg-pattern-top.svg),
+          url(images/bg-pattern-bottom.svg);
+        background-color: hsl(185, 75%, 39%);
+        background-repeat: no-repeat;
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+        font-family: "Kumbh Sans", sans-serif;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1,
+      h2 {
+        font-weight: 700;
+        font-size: 18px;
+        color: hsl(229, 23%, 23%);
+      }
+      h1 {
+        margin-bottom: 10px;
+      }
+      h2 {
+        margin-bottom: 5px;
+      }
+      span.age {
+        font-weight: 400;
+      }
+      p {
+        font-size: 14px;
+        color: hsl(227, 10%, 46%);
+      }
+      #key-facts p {
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+      #card {
+        width: 330px;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 15px 25px 50px -4px rgba(45, 50, 72, 0.2);
+      }
+      #card > header {
+        height: 140px;
+        position: relative;
+        margin-bottom: 77px;
+      }
+      #card > header > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+      }
+      #profile-picture {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        height: 106px;
+        width: 106px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #profile-picture > img {
+        border-radius: 50%;
+      }
+      hr {
+        margin: 25px 0;
+        color: hsl(0, 0%, 59%);
+        opacity: 0.2;
+      }
+      #key-facts {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 24px;
+      }
+      #key-facts > div {
+        width: 55px;
+      }
+      footer {
+        position: absolute;
+        bottom: 18px;
+        left: 0;
+        right: 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <header>
+        <img src="images/bg-pattern-card.svg" alt="background pattern" />
+        <div id="profile-picture">
+          <img src="images/image-victor.jpg" alt="profile picture" />
+        </div>
+      </header>
+      <h1>Victor Crest <span class="age">26</span></h1>
+      <p>London</p>
+      <hr />
+      <div id="key-facts">
+        <div>
+          <h2>80K</h2>
+          <p>Followers</p>
+        </div>
+        <div>
+          <h2>803K</h2>
+          <p>Likes</p>
+        </div>
+        <div>
+          <h2>1.4K</h2>
+          <p>Photos</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/franzockel">Franzockel</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
